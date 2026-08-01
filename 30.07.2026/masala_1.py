@@ -1,3 +1,4 @@
+import os
 class Employee:
 	def __init__(self,surname,position,salary):
 		self.surname = surname
@@ -28,6 +29,7 @@ class EnterpriseEmployee(Employee):
 
 
 if __name__ == "__main__":
+	os.system("clear")
 	emp1 = EnterpriseEmployee("Karimov","Boshliq",10000,85)
 	try:
 		res = emp1.oshirilgan_oylik()

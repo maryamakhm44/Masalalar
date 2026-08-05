@@ -1,4 +1,5 @@
 from abc import ABC,abstractmethod
+
 class Car(ABC):
 	def __init__(self,status):
 		self._engine_status = status
@@ -16,10 +17,10 @@ class ElectricCar(Car):
 		super().__init__(status)
 
 	def start_engine(self):
-		print("Dvigatel yoqildi (Electric)")
+		print("Dvigatel yoqildi (ElectricC)")
 
 	def stop_engine(self):
-		print("Dvigatel to'xtatildi (Electric)")
+		print("Dvigatel to'xtatildi (ElectricC)")
 
 
 class GasolineCar(Car):
@@ -27,11 +28,11 @@ class GasolineCar(Car):
 		super().__init__(status)
 
 	def start_engine(self):
-		print("Dvigatel yoqildi (Gasoline)")
+		print("Dvigatel yoqildi (GasolineC)")
 
 
 	def stop_engine(self):
-		print("Dvigatel to'xtatildi (Gasoline)")
+		print("Dvigatel to'xtatildi (GasolineC)")
 
 
 if __name__ == "__main__":

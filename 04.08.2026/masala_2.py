@@ -8,7 +8,7 @@ class Student:
 
 
 	def show_info(self):
-		print("\t|---------------------------------------------|")
+		print("\n\t|---------------------------------------------|")
 		print("\t| ID |First name|   Last name  | Age | Course |")
 		print("\t|---------------------------------------------|")
 		print(f"\t|{self.__student_id:4d}|{self.__first_name:10s}|{self.__last_name:14s}|{self.__age:5d}|{self.__course:8d}|")
